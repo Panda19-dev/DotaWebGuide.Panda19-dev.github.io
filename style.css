@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.hero_name {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 122;
+  font-size: 1rem;
+  font-family: "Supermercado One", cursive;
+}
+
+.hero-name:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.Logo {
+  cursor: pointer;
+}
