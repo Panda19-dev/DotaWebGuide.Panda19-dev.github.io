@@ -3,12 +3,10 @@ fetch("https://api.opendota.com/api/heroes")
   .then((data) => {
     console.dir(data);
 
-    //let heroes = data.services;
-    //console.log(heroes);
-
     for (let index = 0; index < data.length; index++) {
       const element = data[index];
       let heroName = document.createElement("a");
+      heroName.setAttribute("href", "./hero.html?heroid=" + (element.id - 1));
       heroName.classList.add("hero-name");
       heroName.innerHTML = element.localized_name;
       document.querySelector(".hero_name").append(heroName);
