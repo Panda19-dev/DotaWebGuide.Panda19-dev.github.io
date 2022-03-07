@@ -64,8 +64,7 @@
 
 .hero_name {
   display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: 122;
+  grid-template-columns: repeat(5, 1fr);
   font-size: 1rem;
   font-family: "Supermercado One", cursive;
 }
@@ -82,4 +81,8 @@
 
 .Logo {
   cursor: pointer;
+}
+
+.hero-heading {
+  color: white;
 }
