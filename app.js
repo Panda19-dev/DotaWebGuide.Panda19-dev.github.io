@@ -7,8 +7,9 @@ fetch("https://api.opendota.com/api/heroes")
 
     for (let index = 0; index < data.length; index++) {
       const element = data[index];
+      console.log(element);
       let heroName = document.createElement("a");
-      heroName.setAttribute("href", "./hero.html?heroid=" + (element.id - 1));
+      heroName.setAttribute("href", "./hero.html?heroid=" + element.id);
       heroName.classList.add("hero-name");
       heroName.addEventListener("mouseenter", onMouseEnterHeroName);
       heroName.addEventListener("mouseleave", onMouseLeaveHeroName);
@@ -31,12 +32,13 @@ fetch("https://api.opendota.com/api/heroes")
   });
 
 function onMouseEnterHeroName(event) {
-  let realName = event.target.innerHTML.split(" ").join("_").toLowerCase();
-  mouseOverImage.setAttribute("src", "./images/heroes/" + realName + ".png");
-  mouseOverImage.style.display = "block";
+  //let realName = event.target.innerHTML.split(" ").join("_").toLowerCase();
+  //mouseOverImage.setAttribute("src", "./images/heroes/" + realName + ".png");
+  //mouseOverImage.style.display = "block";
+  console.log("Mouse is over " + event.target.innerHTML);
 }
 
 function onMouseLeaveHeroName(event) {
-  mouseOverImage.style.display = "none";
+  //mouseOverImage.style.display = "none";
   console.log("Mouse left " + event.target.innerHTML);
 }

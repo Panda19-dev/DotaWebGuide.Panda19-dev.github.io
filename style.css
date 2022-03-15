@@ -67,6 +67,9 @@
   grid-template-columns: repeat(5, 1fr);
   font-size: 1rem;
   font-family: "Supermercado One", cursive;
+  align-items: center;
+  position: relative;
+  grid-gap: 10px;
 }
 
 .hero-name {
@@ -75,14 +78,58 @@
 }
 
 .hero-name:hover {
-  color: rgb(163, 13, 13);
+  color: rgb(255, 255, 255);
   cursor: pointer;
-}
-
-.Logo {
-  cursor: pointer;
+  transform-origin: 0% 0%;
+  transform: scale(1.5);
+  align-self: flex-start;
 }
 
 .hero-heading {
   color: white;
+}
+
+.hero-legs {
+  color: white;
+}
+
+.hero-roles {
+  color: white;
+}
+
+.main h1:hover {
+  color: black;
+  cursor: pointer;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.numberofmatches {
+  transition: 0.3s;
+  position: relative;
+}
+
+.numberofmatches:hover {
+  position: relative;
+  transition: 0.3s;
+}
+
+.numberofmatches .text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s ease;
+}
+
+.numberofmatches .text h1 {
+  color: black;
+  font-family: "Kaushan Script";
+}
+
+.numberofmatches:hover .text {
+  opacity: 1;
 }
