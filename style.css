@@ -101,22 +101,27 @@
   color: black;
   cursor: pointer;
 }
-.main {
-  width: 100%;
-  height: 100%;
+.stats_main {
+  display: grid;
+  grid-row-gap: 100%;
+  align-items: center;
 }
 
-.numberofmatches {
+.stats_main:hover {
+  cursor: pointer;
+}
+
+.numberofmatcheslasthour {
   transition: 0.3s;
   position: relative;
 }
 
-.numberofmatches:hover {
+.numberofmatcheslasthour:hover {
   position: relative;
   transition: 0.3s;
 }
 
-.numberofmatches .text {
+.numberofmatcheslasthour .text {
   position: absolute;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -125,11 +130,131 @@
   transition: all 0.3s ease;
 }
 
-.numberofmatches .text h1 {
+.numberofmatcheslasthour .text h1 {
   color: black;
   font-family: "Kaushan Script";
 }
 
-.numberofmatches:hover .text {
+.numberofmatcheslasthour:hover .text {
   opacity: 1;
+}
+
+.numberofplayers {
+  transition: 0.3s;
+  position: relative;
+}
+
+.numberofplayers:hover {
+  position: relative;
+  transition: 0.3s;
+}
+
+.numberofplayers .text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s ease;
+}
+
+.numberofplayers .text h1 {
+  color: black;
+  font-family: "Kaushan Script";
+}
+
+.numberofplayers:hover .text {
+  opacity: 1;
+}
+
+.numberoferrorslastday {
+  transition: 0.3s;
+  position: relative;
+}
+
+.numberoferrorslastday:hover {
+  position: relative;
+  transition: 0.3s;
+}
+
+.numberoferrorslastday .text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s ease;
+}
+
+.numberoferrorslastday .text h1 {
+  color: black;
+  font-family: "Kaushan Script";
+}
+
+.numberoferrorslastday:hover .text {
+  opacity: 1;
+}
+
+.numberofapihitslastday {
+  transition: 0.3s;
+  position: relative;
+}
+
+.numberofapihitslastday:hover {
+  position: relative;
+  transition: 0.3s;
+}
+
+.numberofapihitslastday .text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s ease;
+}
+
+.numberofapihitslastday .text h1 {
+  color: black;
+  font-family: "Kaushan Script";
+}
+
+.numberofapihitslastday:hover .text {
+  opacity: 1;
+}
+
+.numberofmatcheslastday {
+  transition: 0.3s;
+  position: relative;
+}
+
+.numberofmatcheslastday:hover {
+  position: relative;
+  transition: 0.3s;
+}
+
+.numberofmatcheslastday .text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s ease;
+}
+
+.numberofmatcheslastday .text h1 {
+  color: black;
+  font-family: "Kaushan Script";
+}
+
+.numberofmatcheslastday:hover .text {
+  opacity: 1;
+}
+
+.stats_header {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  background-color: black;
 }
