@@ -97,6 +97,14 @@
   color: white;
 }
 
+.hero-attack-type {
+  color: white;
+}
+
+.hero-primary-attribute {
+  color: white;
+}
+
 .main h1:hover {
   color: black;
   cursor: pointer;

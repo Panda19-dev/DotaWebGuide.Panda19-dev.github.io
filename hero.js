@@ -26,14 +26,14 @@ fetch("https://api.opendota.com/api/heroes/")
     heroPrimaryAttribute.innerHTML = element.primary_attr;
     heroPrimaryAttribute.classList.add("hero-primary-attribute");
     document.querySelector("main").append(heroPrimaryAttribute);
-
+    /*
     if (heroPrimaryAttribute == "str") {
     }
     if (heroPrimaryAttribute == "int") {
     }
     if (heroPrimaryAttribute == "agi") {
     }
-
+*/
     let heroRoles = document.createElement("p");
     heroRoles.innerHTML = element.roles;
     heroRoles.classList.add("hero-roles");
